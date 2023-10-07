@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+.form-control.error input {
+    border-color: red;
+}
+.form-control small {
+    color: red;
+    visibility: hidden;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.form-control.error small {
+    visibility: visible;
+    
+}

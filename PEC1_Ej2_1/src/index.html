@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register with us</h1>
+        <form id="formCont">
+            <!-- Campo Username -->
+            <div class = "form-control">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username">
+                <small>Error message</small>
+            </div>
+            <!-- Campo Email -->
+            <div class = "form-control">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+                <small>Error message</small>
+            </div>
+            <!-- Campo Edad -->
+            <div class = "form-control">
+                <label for="age">Your age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+                <small>Error message</small>
+            </div>
+            <!-- Campo Password -->
+            <div class = "form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <!-- Campo Confirm Password -->
+            <div class = "form-control">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter password again">
+                <small>Error message</small>
+            </div>
+            <!-- Botón de Enviar -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src = "script.js" ></script>
+
+</body>
+</html>
